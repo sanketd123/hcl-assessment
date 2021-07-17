@@ -11,10 +11,18 @@
       {
         "customerId": 45785456,
         "transactionDescription": "Loan EMI",
+        "amount": "100",
+        "paymentType": "debit",
+        "date" : "12/05/2021",
+        "remainingBalance" : "1100"
+      },
+      {
+        "customerId": 45785456,
+        "transactionDescription": "Loan EMI",
         "amount": "1000",
         "paymentType": "credit",
         "date" : "20/05/2021",
-        "remainingBalance" : "2200"
+        "remainingBalance" : "2100"
       },
       {
         "customerId": 45785456,
