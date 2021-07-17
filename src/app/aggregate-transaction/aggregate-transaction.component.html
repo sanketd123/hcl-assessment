@@ -1,0 +1,38 @@
+<div class="main-container">
+    <p class="heading">Aggregate transaction data</p>
+
+    <div *ngIf="isError && !isLoading">
+        <span class="error"> System error, Please try agian. </span>
+    </div>
+
+    <div *ngIf="isLoading">
+        Please wait ...
+    </div>
+
+    <div *ngIf="!isError && !isLoading">
+    <table>
+            <thead>
+                <tr>
+                    <th colspan="5">Monthly Spend View</th>
+                </tr>
+                <tr>
+                    <th>Month</th>
+                    <th>Customer Number</th>
+                    <th>Total Incoming</th>
+                    <th>Total Outgoing</th>
+                    <th>Closing Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of aggregateDataList">
+                        <td>{{item.month}}</td>
+                        <td>{{item.customerId}}</td>
+                        <td>Rs.{{item.totalIncome}}</td>
+                        <td>Rs.{{item.totalOutgoings}}</td>
+                        <td>Rs.{{item.closingBalance}}</td>
+                </tr>
+            </tbody>
+    </table>
+    </div>
+
+</div>

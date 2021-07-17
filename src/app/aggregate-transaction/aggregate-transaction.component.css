@@ -1,0 +1,43 @@
+body{
+    background-color: lightgray;
+}
+
+.main-container {
+    font-family: sans-serif;
+}
+
+.error {
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid red;
+    padding-right: 10px;
+    background-color: bisque;
+}
+
+.heading {
+    font-size: 30px;
+    color: lightslategray;
+    text-decoration: underline;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+tr td, tr th {
+    border: 1px solid gray;
+    border-spacing: 17px;
+    padding: 10px;    
+}
+
+thead tr:first-child {
+    background-color: brown;
+    color: white;
+}
+
+tr:nth-child(odd){
+    background-color: lightgrey;
+}
