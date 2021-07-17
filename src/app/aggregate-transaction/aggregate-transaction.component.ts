@@ -70,6 +70,8 @@ export class AggregateTransactionComponent implements OnInit {
             });
             aggregateData.closingBalance = transactionDataInSameMonth[transactionDataInSameMonth.length-1].remainingBalance;
             aggregateData.customerId =  element.customerId;
+            aggregateData.totalIncome = Number(aggregateData.totalIncome);
+            aggregateData.totalOutgoings = Number(aggregateData.totalOutgoings)
             this.aggregateDataList.push(aggregateData);
           }
           
