@@ -1,0 +1,230 @@
+@import "./variable";
+@import "./mixin";
+
+.form_field {
+  margin-bottom: 24px;
+}
+.text_field {
+  position: relative;
+}
+.relate {
+  position: relative;
+}
+.form_label {
+  font-size: 14px;
+  margin-bottom: 7px;
+  color: var(--greyish-brown);
+  display: block;
+}
+.show_label {
+  font-size: 14px;
+  margin-bottom: 7px;
+  color: var(--black-four);
+  display: block;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.error_msg {
+  color: red;
+  font-size: 12px;
+}
+
+.list_box {
+  border-radius: 12px;
+}
+.cdk-overlay-pane {
+  .list_box & {
+    width: 100% !important;
+  }
+}
+
+input,
+select,
+textarea {
+  @include border-radius(12px);
+  padding: 15px 18px;
+  width: 100%;
+  color: var(--black-four);
+  background-color: var(--white);
+  border: solid 1px var(--warm-gray);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  -webkit-appearance: none;
+  transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  &:hover,
+  &:focus {
+    border: solid 1px var(--orange) !important;
+    box-shadow: 0 0 5px var(--orange);
+  }
+}
+textarea {
+  min-height: 120px;
+  resize: none;
+  @media(max-width:1024px){
+    min-height: 225px;
+    width: 100%;
+  }
+}
+.otp_input_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto 24px;
+  .sms-no-box {
+    width: 48px;
+    height: 48px;
+    padding: 6px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    &:last-child {
+      margin: 0;
+    }
+    @media (max-width: 650px) {
+      width: 45px;
+      height: 45px;
+      margin-right: 24px;
+    }
+  }
+}
+.email_change {
+  .otp_input_wrapper {
+    .sms-no-box {
+      @media (max-width: 650px) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.fill_btn,
+a.fill_btn {
+  @include border-radius(12px);
+  background-color: var(--orange);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.67px;
+  color: var(--white);
+  padding: 14px 20px;
+  transition: all ease-in 0.3s;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    background-color: #d3440f;
+    color: var(--white);
+  }
+  @media (max-width: 650px) {
+    font-size: 12px;
+    padding: 12px 18px;
+  }
+  &.full_btn {
+    color: var(--white);
+  }
+  &.disable_btn {
+    background-color: #f6f6f6;
+    color: #aeaeae;
+    pointer-events: none;
+  }
+  &.inactive{
+      color: #aeaeae;
+  }
+}
+
+.outline_btn,
+a.outline_btn {
+  @include border-radius(12px);
+  border: solid 1px var(--warm-gray);
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.67px;
+  color: var(--orange);
+  padding: 13px 20px;
+  transition: all ease-in 0.3s;
+  display: inline-block;
+  &:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+  @media (max-width: 650px) {
+    font-size: 12px;
+    padding: 12px 18px;
+  }
+  &.disable_btn {
+    background-color: #f6f6f6;
+    color: #aeaeae;
+    pointer-events: none;
+  }
+  &.load_more {
+    @include border-radius(8px);
+    font-size: 12px;
+    padding: 9px 13px;
+  }
+}
+
+.full_btn {
+  width: 327px;
+  padding: 19px 20px;
+  color: var(--black-four);
+  margin-bottom: 25px;
+  @media (max-width: 812px) {
+    width: 100%;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+  }
+}
+
+.digital_id_btn {
+  margin: 30px 0;
+  color: var(--orange);
+  position: relative;
+  &:hover {
+    color: var(--white);
+  }
+  @media (max-width: 1024px){
+    width: 250px;
+  }
+  @media (max-width: 768px){
+    width: 280px;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 380px;
+  }
+}
+.detail_col{
+  #digitalid-verify{
+    .verified{
+      right: 0 !important;
+    }
+
+  }
+}
+
+
+.btn-disable {
+  background: #f9c187;
+  cursor: no-drop;
+
+  &:hover {
+    background: #f9c187;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

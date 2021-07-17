@@ -1,0 +1,143 @@
+.flex_row {
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+  }
+  .flex_col_sm_2 {
+    width: 16.66666667%;
+    padding: 0 10px;
+    position: relative;
+  }
+  .flex_col_sm_3 {
+    width: 25%;
+    padding: 0 10px;
+  }
+  .flex_col_sm_4 {
+    width: 33.3%;
+    padding: 0 10px;
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+  }
+  
+  .flex_col_sm_5 {
+    width: 41.666667%;
+    padding: 0 10px;
+  }
+  
+  
+  .flex_col_sm_6 {
+    width: 50%;
+    padding: 0 10px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 650px) {
+      width: 50%;
+    }
+  }
+  .flex_col_xs_6{
+    width: 50%;
+    padding: 0 10px;
+  }
+  .flex_col_sm_7 {
+    width: 58.333333%;
+    padding: 0 10px;
+  }
+  .flex_col_sm_8 {
+    width: 66.666667%;
+    padding: 0 10px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .flex_col_sm_9 {
+    width: 75%;
+    padding: 0 10px;
+  }
+  .flex_col_sm_10 {
+    width: 83.33333333%;
+    padding: 0 10px;
+  }
+  .flex_col_sm_12,.flex_col_xs_12 {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .right_flex {
+    align-items: flex-end;
+  }
+  
+  .center_flex{
+    align-items: center;
+    @media (max-width: 812px) {
+      align-items: flex-start;
+    }
+  }
+  
+  .f_row {
+    display: flex;
+  }
+  
+  
+  .row_wrap{
+    display: flex;
+  }
+  
+  .f_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .f_spacebw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .show_label{
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+  
+  .left_col{
+    position: fixed;
+    height: 100%;
+    width: 500px;
+    @media (max-width: 1150px) {
+      width: 380px;
+    }
+    @media (max-width: 766px) {
+      display: none;
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+      display: none;
+    }
+  }
+  
+  .right_col {
+    max-width: 1200px;
+    padding-left: 500px;
+  
+    @media (max-width: 1420px) {
+      width: 1400px;
+    }
+    @media (max-width: 1150px) {
+      padding-left: 380px;
+    }
+  
+    @media (max-width: 766px) {
+      padding: 0;
+      width: 100%;
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+      width: 100%;
+      padding: 0;
+    }
+  
+  }
+  
+  
