@@ -62,10 +62,10 @@ export class AggregateTransactionComponent implements OnInit {
             }
             transactionDataInSameMonth.forEach(element => {
                 if(element.paymentType == "debit"){
-                  aggregateData.totalOutgoings += element.amount;
+                  aggregateData.totalOutgoings = Number(aggregateData.totalOutgoings) +  Number(element.amount);
                 }
                 if(element.paymentType == "credit"){
-                  aggregateData.totalIncome += element.amount;
+                  aggregateData.totalIncome = Number(aggregateData.totalIncome) + Number( element.amount);
                 }
             });
             aggregateData.closingBalance = transactionDataInSameMonth[transactionDataInSameMonth.length-1].remainingBalance;
