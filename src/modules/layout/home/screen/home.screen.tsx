@@ -1,6 +1,6 @@
 import React from 'react';
 import AppLayout from "../../../../applayout/applayout";
-
+import { stockData } from "../../../../data";
 
 interface Props {
 }
@@ -85,6 +85,9 @@ return (
 </table>
         </div>
     </div>
+
+
+    
     
 </>
 )
