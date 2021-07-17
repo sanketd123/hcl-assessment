@@ -82,10 +82,32 @@ return (
     <td>19/06/2021 12:00</td>
   </tr>
   
-</table>
+      </table>
         </div>
+
+
+        <div className="white_wrapper">
+    <div className="stock-container">
+        {stockData.map((data, key) => {
+          return (
+            <div key={key}>
+              {data.company +
+                " , " +
+                data.ticker +
+                " ," +
+                data.stockPrice +
+                ", " +
+                data.timeElapsed}
+            </div>
+          );
+        })}
+      </div>
     </div>
 
+
+    </div>
+    
+   
 
     
     
