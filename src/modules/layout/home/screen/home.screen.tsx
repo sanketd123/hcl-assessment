@@ -10,20 +10,7 @@ class HomeScreen extends React.Component {
     constructor(props: Props) {
     super(props);
    this.state = {
-            rows: [
-                {
-                    id: 0,
-                    title: "ABC"
-                },
-                {
-                    id: 1,
-                    title: "DEF"
-                },
-                {
-                    id: 2,
-                    title: "GHI"
-                }
-            ]
+           
         }
     }
 render() {
@@ -86,18 +73,30 @@ return (
         </div>
 
 
-        <div className="white_wrapper">
+   <div className="white_wrapper">
     <div className="stock-container">
         {stockData.map((data, key) => {
           return (
             <div key={key}>
-              {data.company +
+              {data.CustomerID +
                 " , " +
-                data.ticker +
+                data.TransactionDescription +
                 " ," +
-                data.stockPrice +
+                data.Amount +
                 ", " +
-                data.timeElapsed}
+                data.PaymentType +
+
+                "," +
+
+                data.Category +
+
+                "," +
+
+                data.Date 
+                 
+                
+                
+                }
             </div>
           );
         })}
