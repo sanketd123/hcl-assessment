@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {systemErrorMessage,loadingIndicatorMessage, pageTitle, fullMonthList} from './../app.constant';
 import {HttpService} from '../app.service';
 @Component({
   selector: 'app-aggregate-transaction',
@@ -11,24 +11,12 @@ export class AggregateTransactionComponent implements OnInit {
   public transactionList = [];
   public isError = false;
   public aggregateDataList = [];
-  public errorMessage = "System error, Please try agian.";
-  public loadingMessage = "Please wait ...";
-  public pageTitle = "Aggregate transaction data";
-  public monthList = {
-    "01" : "JAN",
-    "02" : "FEB",
-    "03" : "MAR",
-    "04" : "APR",
-    "05" : "MAY",
-    "06" : "JUNE",
-    "07" : "JULY",
-    "08" : "AUG",
-    "09" : "SPT",
-    "10" : "OCT",
-    "11" : "NOV",
-    "12" : "DEC",
-  }
+  public errorMessage = systemErrorMessage;
+  public loadingMessage = loadingIndicatorMessage;
+  public pageTitle = pageTitle;
+  public monthList = fullMonthList;
   public isLoading = false;
+  
   constructor(private httpService : HttpService) { }
 
   ngOnInit(): void {
