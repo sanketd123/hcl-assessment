@@ -1,14 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AggregateTransactionComponent } from './aggregate-transaction.component';
-
-describe('AggregateTransactionComponent', () => {
+import {HttpService} from '../app.service';
+fdescribe('AggregateTransactionComponent', () => {
   let component: AggregateTransactionComponent;
   let fixture: ComponentFixture<AggregateTransactionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AggregateTransactionComponent ]
+      declarations: [ AggregateTransactionComponent ],
+      providers : [HttpService],
+      imports : [HttpClientModule]
     })
     .compileComponents();
   });
