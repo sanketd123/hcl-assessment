@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "firstName": "palak",
+      "lastName": "sharma",
+      "username": "palak15",
+      "password": "Palak@124",
+      "id": 1
+    },
+    {
+      "firstName": "palak",
+      "lastName": "sharma",
+      "username": "palak15",
+      "password": "Palak@1502345",
+      "id": 2
+    },
+    {
+      "firstName": "palak",
+      "lastName": "sharma",
+      "password": "Palak@12344",
+      "username": "palak1502",
+      "id": 3
+    }
+  ]
+}
