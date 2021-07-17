@@ -1,12 +1,12 @@
 <div class="main-container">
-    <p class="heading">Aggregate transaction data</p>
+    <p class="heading">{{pageTitle}}</p>
 
     <div *ngIf="isError && !isLoading">
-        <span class="error"> System error, Please try agian. </span>
+        <span class="error"> {{errorMessage}} </span>
     </div>
 
     <div *ngIf="isLoading">
-        Please wait ...
+        {{loadingMessage}}
     </div>
 
     <div *ngIf="!isError && !isLoading">

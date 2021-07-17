@@ -42,9 +42,11 @@ fdescribe('AggregateTransactionComponent', () => {
   });
 
   it('should check content is loaded',()=>{
-      component.isLoading = true;
+      component.isLoading = false;
       component.ngOnInit();
-      expect(component.isLoading).toBe(false)
+      expect(component.isLoading).toBe(true);
   });
+
+  
 
 });

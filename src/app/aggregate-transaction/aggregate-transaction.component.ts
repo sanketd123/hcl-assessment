@@ -11,6 +11,9 @@ export class AggregateTransactionComponent implements OnInit {
   public transactionList = [];
   public isError = false;
   public aggregateDataList = [];
+  public errorMessage = "System error, Please try agian.";
+  public loadingMessage = "Please wait ...";
+  public pageTitle = "Aggregate transaction data";
   public monthList = {
     "01" : "JAN",
     "02" : "FEB",
