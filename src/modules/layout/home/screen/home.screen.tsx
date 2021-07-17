@@ -1,7 +1,7 @@
 import React from 'react';
 import AppLayout from "../../../../applayout/applayout";
 import { stockData } from "../../../../data";
-
+import { Link } from 'react-router-dom';
 interface Props {
 }
 interface State {
@@ -28,6 +28,7 @@ return (
             </div>
           </div>
           <div className="flex_col_sm_6 text-right">
+             <Link to="/make-payment" className="outline_btn ftr_btn m_r_15">Make a  payment</Link>
               <button className="outline_btn ftr_btn">Filter</button>
           </div>
       </div>
